@@ -1,31 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!--tells sites documents language type-->
+<html lang="en"><!-- -->
   <head>
     <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!--Sets screen sizes ofr users device-->
+  <link rel="stylesheet" href="styles.css"><!--Connects css styles to html structures-->
     <meta>
   </head>
   <body>
     <div class="header">
-      
-      <h1 id="title">Survey Form</h1>
-          <p id="description">Please fill out this form.</p>
+      <h1 id="title">Survey Form</h1><!--Sites Title-->
+          <p id="description">Please fill out this form.</p> <!--Sites uptitile-->
       </div>
-      <form id="survey-form">
-      <fieldset>
-        
+      <form id="survey-form"><!--Starts form portion of body-->
+      <fieldset><!--First section of form-->
           <label id="name-label">Please Enter Your Name:  <input id="name" type="text" placeholder="Joan Smith" required></label>
-
           <label id="email-label">Please Enter Your Email: <input id="email" type="email" placeholder="joan.s@gmail.com" required></label>
     </fieldset>
-      <fieldset>
-          <label id="number-label">Please Enter Your Age: <input id="number" type="number" placeholder="35" min="13" max="120" required</label>
-        <label id="ddown">Which North American Country are you from?:<select id="dropdown">
+      <fieldset><!--second section of form-->
+          <label id="number-label">Please Enter Your Age: <input id="number" type="number" placeholder="35" min="13" max="120" required ></label>
+        <label id="ddown">Which North American Country are you from?:
+          <!--first drop down section-->
+          <select id="dropdown">
           <option>Canada</option>
           <option>United States</option>
           <option>Mexico</option>
         </select>
         </label>
+        <!--second drop down section-->
         <label id="drop">Are You Left Or Right Handed?:
         <select id="dropdown">
           <option>Left</option>
@@ -33,9 +34,8 @@
         </select>
       </label>
 <label>Blood Type: <input id="radio"type="radio" name="radio" value="radio">> A Type <input id="radio" type="radio" name="radio" value="radio">> B Type</label>
-       
         </fieldset>
-        <fieldset>
+        <fieldset><!--third section of form-->
           <label id="checkbox">
             <input id="checkbox" type="checkbox" value="Blond"> Blond
             <input id="checkbox" type="checkbox" value="Brunette"> Brunette
@@ -43,7 +43,7 @@
           </label>
           <label id="textarea"> Please Explain The Reason For Your Visit: <textarea id="textarea" name="textarea" placeholder="Travel.."></textarea></label>
           </fieldset>
-          
+          <!--Submit button-->
           <input  id="submit" type="Submit">
  </form>
   </body>
